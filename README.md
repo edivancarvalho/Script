@@ -11,3 +11,4 @@ Ferramentas para uso de redes.
 #scp
 #iperf3
 
+#-- Para realizar a instalação do nload.
