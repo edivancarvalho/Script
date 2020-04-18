@@ -1,5 +1,7 @@
 #   Estarei usando o fedora 31.
 #   PROBLEMA: Extrair um arquivo .rar esta com senha.
 #   Instalação do pacote unrar.
-dnf isntall unrar
-unrar x arquivo.rar -psigiteasenha
+dnf install unrar
+unrar x arquivo.rar -pdigiteasenha
+
+# [-p] + a senha.
