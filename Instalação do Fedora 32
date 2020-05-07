@@ -1,0 +1,80 @@
+#!/bin/bash
+dnf upgrade -y
+
+# removendo tudo do java
+whereis java
+# remove qualquer pasta de aparacer aqui;
+rm -rf /usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/share/man/man1/java.1.gz
+
+#ou 
+rm -Rf /usr/bin/java
+rm -Rf /usr/share/java
+rm -Rf /usr/lib/java/
+rm -Rf /usr/share/man/man1/java.1.gz
+rm -Rf /usr/share/man/man1/java.1.gz
+
+# Verificar novamente
+whereis java
+rm -Rf /etc/java
+
+whereis java2html 
+rm -rf /usr/bin/java2html
+
+# como o LibreOffice ja vem junto precisara remove tambem
+rpm -e libreoffice* -y
+
+dnf remove libreoffice* -y
+dnf upgrade -y
+
+# fazendo donload do oracle java
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+acessa e baixa a versao.
+
+cd Download
+rpm -ivh jdk-8u251-linux-x64.rpm
+java -version
+
+# Ferramentas que uso;
+dnf install nmap htop vim nload 
+
+#Instalando o Netbeans 8.2
+#fazer Donload no site https://netbeans.org/downloads/old/8.2/
+
+sh netbeans-8.2-linux.sh 
+
+#Sigar os passos pela interface grafica e escolhar o lugar onde o java esta instalado; basicamente seria a ultima opção;
+
+# Instalando o Mega.nz 
+#site https://mega.nz/sync e baixar a versao.
+
+#Dependencias:
+
+dnf install qt5
+dnf install cryptopp
+dnf install libmediainfo
+
+# Entra na pasta Donwload e roda o comando;
+rpm -ivh megasync-Fedora_32.x86_64.rpm
+
+#Instalando o Visual Studio Code;
+#Fonte: https://code.visualstudio.com/docs/setup/linux
+
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+dnf check-update
+dnf install code
+
+#Instalação do GitHub para Linux
+#Acessa o link e baixa de acordo com a sua distri.
+#https://github.com/shiftkey/desktop/releases/tag/release-2.4.1-linux2
+
+# Instalar a dependencia libappindicator
+dnf install libappindicator -y
+rpm -ivh GitHubDesktop-linux-2.4.1-linux2.rpm 
+
+#Caso queira ver o video da instalação do GitHub para Linux.
+#https://youtu.be/CSyEYiG8sFI?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
+
+
+
