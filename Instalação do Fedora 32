@@ -46,7 +46,7 @@ rpm -ivh jdk-8u251-linux-x64.rpm
 java -version
 
 # Ferramentas que uso;
-dnf install nmap htop vim nload chromium
+dnf install nmap htop vim nload chromium unzip p7zip p7zip-plugins unrar
 
 # Instalando o Netbeans 8.2
 #fazer Donload no site https://netbeans.org/downloads/old/8.2/
