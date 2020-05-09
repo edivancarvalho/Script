@@ -88,7 +88,7 @@ rpm -ivh GitHubDesktop-linux-2.4.1-linux2.rpm
 #https://youtu.be/CSyEYiG8sFI?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA
 
 # Instalando reprodutor de video VLC
-@Fonte https://www.videolan.org/vlc/download-fedora.html
+# @Fonte https://www.videolan.org/vlc/download-fedora.html
 
 # Precisa adicionar o repositorio RPM FUSION.
 dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
