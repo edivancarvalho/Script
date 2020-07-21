@@ -11,6 +11,8 @@
 # CHANGELOG :
 #
 #------------------------------------------------------------------------------|
+# informação sobre todo o sistema;
+inxi -SCF
 
 #  Atualização 
 dnf upgrade -y
