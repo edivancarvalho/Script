@@ -50,10 +50,15 @@ java -version
 # Ferramentas que uso;
 dnf install nmap htop vim nload chromium unzip p7zip p7zip-plugins unrar
 
-# Instalando o Netbeans 8.2
+#--------------- Instalando o Netbeans 8.2
 #fazer Donload no site https://netbeans.org/downloads/old/8.2/
 chmod +x netbeans-8.2-linux.sh
 sh netbeans-8.2-linux.sh 
+
+# Para remover o netbeans: entre no diretorio usuario:
+cd /home/edivan/netbeans-8.2/
+# e depois faça:
+bash uninstall.sh
 
 # Sigar os passos pela interface grafica e escolhar o lugar onde o java esta instalado; basicamente será a ultima opção;
 
