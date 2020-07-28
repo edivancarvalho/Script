@@ -100,10 +100,10 @@ rpm -ivh GitHubDesktop-linux-2.4.1-linux2.rpm
 # @Fonte https://www.videolan.org/vlc/download-fedora.html
 
 # Precisa adicionar o repositorio RPM FUSION.
-
-dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(versao).noarch.rpm
-#dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#VERSAO=('rpm -E %fedora');
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y 
+dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+apt update -y
 dnf install vlc
 
 #   Ferramenta de partição de Disk
