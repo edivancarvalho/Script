@@ -42,21 +42,23 @@ dnf upgrade -y
 # Fazendo donload do oracle java
 #https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 #acessa e baixa a versao.
-
-cd Download
+mkfir /tmp/software
+cd /tmp/software || exit;
+# fazer o donwload wget link
 rpm -ivh jdk-8u251-linux-x64.rpm
 java -version
 
 # Ferramentas que uso;
-dnf install nmap htop vim nload chromium unzip p7zip p7zip-plugins unrar
+dnf install nmap htop vim nload chromium unzip p7zip p7zip-plugins unrar -y
 
 #--------------- Instalando o Netbeans 8.2
 #fazer Donload no site https://netbeans.org/downloads/old/8.2/
+# Para a pasta temporario /tmp/software
 chmod +x netbeans-8.2-linux.sh
 sh netbeans-8.2-linux.sh 
 
 # Para remover o netbeans: entre no diretorio usuario:
-cd /home/edivan/netbeans-8.2/
+cd ~/netbeans-8.2/ || exit;
 # e depois faça:
 bash uninstall.sh
 
@@ -73,7 +75,7 @@ dnf install libmediainfo
 dnf install qt5 cryptopp libmediainfo
 
 # Entra na pasta Donwload e roda o comando;
-cd ~/Download
+cd /tmp/software || exit;
 rpm -ivh megasync-Fedora_32.x86_64.rpm
 
 #Instalando o Visual Studio Code;
@@ -98,7 +100,9 @@ rpm -ivh GitHubDesktop-linux-2.4.1-linux2.rpm
 # @Fonte https://www.videolan.org/vlc/download-fedora.html
 
 # Precisa adicionar o repositorio RPM FUSION.
-dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(versao).noarch.rpm
+#dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf install vlc
 
