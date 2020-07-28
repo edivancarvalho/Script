@@ -101,16 +101,16 @@ rpm -ivh GitHubDesktop-linux-2.4.1-linux2.rpm
 
 # Precisa adicionar o repositorio RPM FUSION.
 
-dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-dnf install vlc
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
+dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+dnf install vlc -y
 
 #   Ferramenta de partição de Disk
 dnf install gnome-disk-utility -y
 
 # Instalando o gerenciado de impressora.
 
-dnf install  cups system-config-printer
+dnf install cups system-config-printer -y
 
 #
 #------------------------------------- FIM-------------------------------------<
