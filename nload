@@ -1,3 +1,0 @@
-# Instalação no Fedora 31.
-dnf update
-dnf install nload
