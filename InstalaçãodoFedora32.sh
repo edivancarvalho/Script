@@ -17,6 +17,9 @@ inxi -SCF
 #  Atualização 
 dnf upgrade -y
 
+# Instalando a inteface CINNAMON no Fedora.
+dnf install cinnamon -y
+
 # Removendo todos os programas em java que já vem por padrão.
 whereis java
 # remove qualquer pasta de aparacer aqui;
