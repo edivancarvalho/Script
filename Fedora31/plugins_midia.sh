@@ -3,7 +3,12 @@
 # Para esta usando assistindo as videos aulas, parademente  udemy roda javascript so conseguir resolver a repodução do video seguindo estaas etapas:
 
 # @fonts https://docs.fedoraproject.org/en-US/quick-docs/assembly_installing-plugins-for-playing-movies-and-music/
-# 1° 
+# 1° Passo
+# Precisa adicionar o repositorio RPM FUSION.
+#VERSAO=('rpm -E %fedora');
+dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y 
+dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+
 dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
 
 # Passo 2°
