@@ -9,4 +9,4 @@ Ambiente de DevOps na plataforma Fedora 31 | 32
 
 Seguir os passos do script:
 * "plugins_midia.sh"
-Nele mostrará como resolver tais problemas
+Nele mostrará como resolver tais problemas.
