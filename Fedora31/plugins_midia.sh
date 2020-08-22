@@ -19,3 +19,9 @@ dnf group upgrade --with-optional Multimedia -y
 
 #caso queria instalar o VLC faça:
 dnf install vlc -y
+
+# Finalizado ...
+echo "------------------------------------------"
+echo "Favor caso o seu nagevador esteja aberto" ; sleep 5
+echo "-----------------------------------"
+echo "Fecher o navegador e abra novamente" ; sleep 5
