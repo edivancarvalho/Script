@@ -3,7 +3,9 @@
 ---
 Diretórios:
 - Fedora31
-
+	- Docker_Fedora.
+	- OfficeNolinux
+	- Problema ao carregar videos
 ---
 Ferramentas para uso de redes.
 * scritp
