@@ -1,5 +1,9 @@
 # Script para Plataforma Linux
-Script para sistemas Linux
+## Script para sistemas Linux
+---
+Diretórios:
+- Fedora31
+
 ---
 Ferramentas para uso de redes.
 * scritp
