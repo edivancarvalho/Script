@@ -19,3 +19,4 @@ ping -i 30 sbt.com.br
 ping -i 30 1.1.1.1
 
 # Neste caso 30 esta se referindo ao tempo em segundos
+
